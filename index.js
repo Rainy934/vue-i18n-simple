@@ -1,6 +1,12 @@
 function I18N() {
-    var lang = 'en';
+    var lang = '';
     var $tts = {}
+
+    function $init(options) {
+        lang = options.lang
+        $tts = options.tts
+    }
+
     function $toggle(langStr, $root){
         function forceUpdate(obj) {
             obj.$forceUpdate()
@@ -11,15 +17,13 @@ function I18N() {
         lang = langStr
         forceUpdate($root)
     }
+
     function $translate(label){
         return $tts[label][lang]
     }
 
-    function $setLanguage(langObj) {
-        $tts = langObj
-    }
     return {
-        $setLanguage: $setLanguage
+        $init: $init,
         $toggle: $toggle,
         $translate: $translate
     }
