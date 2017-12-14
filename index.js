@@ -7,7 +7,7 @@ function I18N() {
         $tts = options.tts
     }
 
-    function $toggle(langStr, $root){
+    function $set(langStr, $root){
         function forceUpdate(obj) {
             obj.$forceUpdate()
             obj.$children.forEach(function(item) {
@@ -24,7 +24,7 @@ function I18N() {
 
     return {
         $init: $init,
-        $toggle: $toggle,
+        $set: $set,
         $translate: $translate
     }
 }

@@ -32,4 +32,4 @@ the ```this```is the vue root instance, we need complete initlizing before dom r
     
 ##### Change the language code
 
-    this.I18N.$toggle(this.lang, this.$root)
+    this.I18N.$set(this.lang, this.$root)
