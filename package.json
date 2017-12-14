@@ -1,0 +1,25 @@
+{
+  "name": "vue-i18n-simple",
+  "version": "1.0.0",
+  "description": "Internationalization plugin for Vue.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rainy934/vue-i18n-simple.git"
+  },
+  "keywords": [
+    "i18n",
+    "vue",
+    "vuejs",
+    "javascript"
+  ],
+  "author": "Rainy934",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rainy934/vue-i18n-simple/issues"
+  },
+  "homepage": "https://github.com/Rainy934/vue-i18n-simple#readme"
+}
